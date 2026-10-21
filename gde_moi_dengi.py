@@ -33,7 +33,7 @@ def calculate_total(cart):
     """Calculate the final cart total."""
     subtotal = calculate_subtotal(cart)
     discount = calculate_discount(subtotal)
-    return subtotal + discount
+    return subtotal - discount #bug fixed
 
 
 def print_receipt(cart):
